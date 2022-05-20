@@ -1,0 +1,182 @@
+.container {
+  min-height: 46.5vh;
+  padding: 50px;
+  display: flex;
+  color: #252422;
+  margin-bottom: 111px;
+}
+
+.left {
+  flex: 1.5;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.imgContainer {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  margin-left: 100px;
+}
+
+
+.table {
+  padding-top: 20px;
+  width: 100%;
+  border-spacing: 10px;
+  text-align: left;
+}
+
+
+.tr td,
+.oID,
+.address,
+.phone,
+.total {
+  max-width: 15rem;
+}
+
+.oID,
+.customerName,
+.address,
+.phone,
+.total {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.customerName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #eb5e28;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 22%;
+  max-height: 300px;
+  background-color: #252422;
+  padding: 25px;
+  padding-top: 10px;
+  color: #fff;
+  position: fixed;
+  right: 60px;
+  border-radius: 8px;
+  z-index: 99;
+  -webkit-box-shadow: 0px 6px 22px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 6px 22px 8px rgba(0, 0, 0, 0.28);
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.status {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .head {
+    font-size: 1.7rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .status {
+    font-size: 1.2rem;
+  }
+
+  .sub {
+    font-size: 0.9rem;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .tr td {
+    margin: 5px;
+  }
+
+  .ordersItems,
+  .ordersItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    width: 100px;
+  }
+
+  .ordersItem {
+    width: 35px;
+  }
+
+  .imgContainer {
+    width: 35vw;
+    height: 35vh;
+  }
+
+  .oID::before {
+    content: 'Order Details:';
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6%;
+  }
+
+  .oID,
+  .customerName,
+  .address,
+  .phone {
+    font-weight: 00;
+    font-size: 21px;
+  }
+
+  .total,
+  .customerName {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    display: none;
+  }
+}

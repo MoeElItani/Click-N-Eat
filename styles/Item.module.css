@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  min-height: 89vh;
+
+}
+.left,
+.right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.imgContainer {
+  position: relative;
+  width: 60%;
+  margin-top: 60px;
+}
+
+.back {
+  position: fixed;
+  top: 15%;
+  left: 2%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.name {
+  color: #eb5e28;
+  padding: 1rem 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.desc {
+  width: 70%;
+  font-size: 1.2rem;
+  color: #8f8f8f;
+  padding-bottom: 8px;
+
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #252422;
+  padding: 8px 0 8px 0;
+}
+
+.addCombo {
+  color: #252422;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.combo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.comboDescription {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.quantity {
+  border: 2px solid #252422;
+  width: 55px;
+  height: 35px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  padding-left: 3px;
+  margin-right: 2.25px;
+}
+
+.submit {
+  border: 2px solid #252422;
+  background-color: #252422;
+  color: #fff;
+  padding: 0 15px;
+  height: 35px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 2.25px;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .back {
+    color: #252422;
+    background-color: #fff;
+    border-radius: 50px;
+    position: fixed;
+    top: 10%;
+    left: 2px;
+    z-index: 99;
+  }
+
+  .imgContainer {
+    width: 50%;
+    margin-top: 15px;
+    margin: 0;
+  }
+
+  .description {
+    width: 80%;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
