@@ -101,7 +101,7 @@ const Item = ({ foodItem }) => {
 
 // Getting Specific Item (By ID) from API
 export const getServerSideProps = async ({ params }) => {
-  const res = await axios.get(`http://localhost:3000/api/Items/${params.id}`);
+  const res = await axios.get(`/api/Items/${params.id}`);
   return {
     props: {
       foodItem: res.data
