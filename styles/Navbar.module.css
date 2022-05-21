@@ -72,14 +72,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  .listItem {
+    margin-left: -25%;
+  }
   .info {
     display: none;
     font-size: .8rem;
-  }
-
-  .listItem:nth-child(1) {
-    font-size: 1.3rem;
   }
 
   .item {

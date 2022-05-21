@@ -19,7 +19,8 @@
   padding: 10px 30px;
   cursor: pointer;
 }
-.wrapper:hover{
+
+.wrapper:hover {
   -webkit-box-shadow: 0px 0px 15px 5px rgba(143, 143, 143, 0.91);
   box-shadow: 0px 0px 15px 5px rgba(143, 143, 143, 0.91);
   transition: 0.2s ease-in-out;
@@ -54,16 +55,28 @@
     padding: 0;
     width: 50%;
   }
-  .wrapper{
+
+  .wrapper {
     height: 100%;
     width: 95%;
   }
-  .wrapper:hover{
+
+  .title {
+    font-size: 1.25rem;
+    width: 200%;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+
+  .wrapper:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
     transition: none;
   }
-  .info{
+
+  .info {
     width: 150%;
   }
 }
