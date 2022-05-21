@@ -179,10 +179,10 @@
   .wrapper {
     width: 70%;
     margin: 10px 30%;
-    position: fixed;
-    right: -15%;
-    top: 65%;
+    position: relative;
   }
+
+
 
 }
 
