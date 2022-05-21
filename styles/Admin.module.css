@@ -59,11 +59,12 @@
 .actionButton {
   border: none;
   padding: 5px;
-  color: #2ad4d4;
   cursor: pointer;
-  color: #dc143c;
   margin-left: 8px;
   background-color: transparent;
+}
+.delete{
+  fill: #dc143c;
 }
 
 .actionButton {

@@ -37,6 +37,9 @@
 .arrowContainer:last-child {
   margin-right: 4%;
 }
+.arrow{
+  fill: #fff;
+}
 
 .head,
 .headText {

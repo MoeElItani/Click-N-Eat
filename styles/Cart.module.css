@@ -89,11 +89,13 @@
 .exit {
   position: fixed;
   top: 24%;
-  right: 26%;
+  right: 34.5%;
   width: fit-content;
   cursor: pointer;
   color: #000;
   z-index: 99999 !important;
+  width: 42px;
+  height: 32px;
 }
 
 @media screen and (max-width: 680px) {

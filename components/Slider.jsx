@@ -1,8 +1,6 @@
 import styles from "../styles/Slider.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import { ChevronDoubleLeftIcon } from '@heroicons/react/outline'
-import { ChevronDoubleRightIcon } from '@heroicons/react/outline'
 
 const Slider = () => {
 
@@ -26,7 +24,10 @@ const Slider = () => {
     <div className={styles.container} id='home'>
       {/* Left Arrow */}
       <div className={styles.arrowContainer} style={{ left: 0 }} onClick={() => handleArrow("l")}>
-        <ChevronDoubleLeftIcon layout="fill" alt="arrow right" />
+        <svg
+          className={styles.arrow}
+          xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+        </svg>
       </div>
       <h1 className={styles.head}>Hungry?</h1>
       <p className={styles.headText}>Order from <span className={styles.title}>Click N&apos; Eat</span></p>
@@ -40,7 +41,10 @@ const Slider = () => {
       </div>
       {/* Right Arrow */}
       <div className={styles.arrowContainer} style={{ right: 0 }} onClick={() => handleArrow("r")}>
-        <ChevronDoubleRightIcon layout="fill" alt="arrow right" />
+        <svg
+          className={styles.arrow}
+          xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
       </div>
     </div>
   );

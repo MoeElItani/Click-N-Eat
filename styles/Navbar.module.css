@@ -24,7 +24,7 @@
 }
 
 .navIcon {
-  color: #8f8f8f;
+  fill: #8f8f8f;
 }
 
 .list {
@@ -54,8 +54,8 @@
   color: #252422;
   font-weight: bold;
   position: absolute;
-  top: 15px;
-  right: 33px;
+  top: 20px;
+  right: 55px;
   width: 18px;
   height: 18px;
   border-radius: 50%;

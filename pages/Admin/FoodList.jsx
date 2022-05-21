@@ -2,9 +2,6 @@ import axios from "axios"
 import Image from "next/image"
 import { useState } from "react"
 import styles from "../../styles/Admin.module.css"
-import { TrashIcon } from '@heroicons/react/Outline'
-import { PlusCircleIcon } from '@heroicons/react/Solid'
-import { XCircleIcon } from '@heroicons/react/Solid'
 import Link from 'next/link'
 import AddFood from '../../components/AddFood'
 import { ToastContainer, toast } from 'react-toastify';
@@ -52,11 +49,13 @@ const FoodList = ({ Items }) => {
         </div>
         <div className={styles.item}>
           <h1 className={styles.title}>Food Item
-            <PlusCircleIcon
+            <svg
               className={styles.plus}
               onClick={() => { setNewItem(true), setExit(true) }}
-              height={30}
-              width={30} />
+              width='30'
+              height='30'
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.002 2c5.518 0 9.998 4.48 9.998 9.998 0 5.517-4.48 9.997-9.998 9.997-5.517 0-9.997-4.48-9.997-9.997 0-5.518 4.48-9.998 9.997-9.998zm-.747 9.25h-3.5c-.414 0-.75.336-.75.75s.336.75.75.75h3.5v3.5c0 .414.336.75.75.75s.75-.336.75-.75v-3.5h3.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-3.5v-3.5c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" />
+            </svg>
           </h1>
           {/* Button Click changes newItem's State to True and opens a Modal to Add New Food */}
           {newItem && <AddFood />}
@@ -97,7 +96,10 @@ const FoodList = ({ Items }) => {
                   <td>
                     <button className={styles.button}
                       onClick={() => handleDelete(items._id)}>
-                      <TrashIcon height={20} width={20} />
+                      <svg
+                        className={styles.delete}
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M20 4h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711v2zm-7 15.5c0-1.267.37-2.447 1-3.448v-6.052c0-.552.447-1 1-1s1 .448 1 1v4.032c.879-.565 1.901-.922 3-1.006v-7.026h-18v18h13.82c-1.124-1.169-1.82-2.753-1.82-4.5zm-7 .5c0 .552-.447 1-1 1s-1-.448-1-1v-10c0-.552.447-1 1-1s1 .448 1 1v10zm5 0c0 .552-.447 1-1 1s-1-.448-1-1v-10c0-.552.447-1 1-1s1 .448 1 1v10zm13-.5c0 2.485-2.017 4.5-4.5 4.5s-4.5-2.015-4.5-4.5 2.017-4.5 4.5-4.5 4.5 2.015 4.5 4.5zm-3.086-2.122l-1.414 1.414-1.414-1.414-.707.708 1.414 1.414-1.414 1.414.707.708 1.414-1.414 1.414 1.414.708-.708-1.414-1.414 1.414-1.414-.708-.708z" />
+                      </svg>
                     </button>
                     <ToastContainer
                       position="bottom-center"
@@ -118,7 +120,17 @@ const FoodList = ({ Items }) => {
         </div>
         {/* Exit button to change newItem's State to false and close the "Add new Item" modal */}
         {exit && (
-          <XCircleIcon className={styles.exit} width='42px' height='32px' onClick={() => { setNewItem(false), setExit(false) }} />
+
+
+          <svg
+            className={styles.exit}
+            onClick={() => { setNewItem(false), setExit(false) }}
+            width='35'
+            height='35'
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" />
+          </svg>
+
         )}
       </div>
     </div>
