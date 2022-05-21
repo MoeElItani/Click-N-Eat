@@ -9,7 +9,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "prisma generate",
     "lint": "next lint",
     "server": "node server/index.js"
   },
