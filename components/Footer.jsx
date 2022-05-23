@@ -14,7 +14,7 @@ function Footer() {
         <hr className={styles.break} />
         <div className={styles.section}>
           <div className={styles.social}>
-            <h1>Find Us on Social Media:</h1>
+            <h1 className={styles.socialHeader}>Find Us on Social Media:</h1>
             <a target='_blank' href="https://www.facebook.com" rel="noopener noreferrer"><Image loading='lazy' src='/img/Social/Fb.png' height={48} width={48} alt='Facebook icon' /></a>
             <a target='_blank' href="https://www.instagram.com" rel="noopener noreferrer"><Image loading='lazy' src='/img/Social/Insta.png' height={48} width={48} alt='Instagram icon' /></a>
             <a target='_blank' href="https://www.tiktok.com" rel="noopener noreferrer"><Image loading='lazy' src='/img/Social/Tiktok.png' height={48} width={48} alt='Tiktok icon' /></a>

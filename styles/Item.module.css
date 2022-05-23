@@ -97,6 +97,12 @@
   margin-left: 2.25px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 390px) {
+  .container .back{
+    top: 13%;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .container {
     width: 100%;

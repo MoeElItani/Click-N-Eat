@@ -45,7 +45,7 @@ const Login = () => {
         <button onClick={handleClick} className={styles.btn}>
           Sign In
         </button>
-        {error && <span className={styles.error}>Wrong Credentials!</span>}
+        {error && <span className={styles.error} style={{ color: '#dc143c' }}>Wrong Credentials!</span>}
       </div>
     </div>
   );

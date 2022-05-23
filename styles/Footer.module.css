@@ -58,6 +58,27 @@
   font-size: 0.8rem;
 }
 
+@media screen and (min-width: 200px) and (max-width: 390px) {
+
+  .wrapper .section .title {
+    font-size: 2.2rem;
+    height: 70px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .socialHeader {
+    font-size: 1.6rem;
+  }
+
+  .section .title {
+    font-size: 2.4rem;
+    height: 70px;
+  }
+
+}
+
 @media screen and (max-width: 1300px) {
   .container {
     height: 400px;

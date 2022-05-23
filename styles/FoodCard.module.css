@@ -47,7 +47,15 @@
   padding-bottom: 12px;
   color: #252422;
 }
-
+@media screen and (max-width: 400px) {
+  .wrapper .title {
+    font-size: 1.13rem;
+    width: 200%;
+  }
+  .wrapper .info {
+    font-size: 13px;
+  }
+}
 
 @media screen and (max-width: 680px) {
 

@@ -185,6 +185,12 @@
 
 
 }
+@media screen and (min-width: 200px) and (max-width: 390px) {
+  .container .exit{
+    top: 22%;
+    right: 13%;
+  }
+}
 
 @media only screen and (max-width: 950px) and (min-width: 370px) {
 

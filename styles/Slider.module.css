@@ -67,6 +67,13 @@
   font-family: pacifico;
 }
 
+@media screen and (max-width: 400px) {
+  .arrowContainer .arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .container {
     height: 28vh;
