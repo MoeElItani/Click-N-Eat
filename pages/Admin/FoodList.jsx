@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const port = process.env.PORT || 3000;
-const URL = process.env.REACT_APP_API_URL || 'localhost';
+axios.defaults.baseURL = process.env.APP_URL;
 
 // States to Toggle a window to Add New Food Item
 const FoodList = ({ Items }) => {
