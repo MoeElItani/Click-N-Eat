@@ -50,7 +50,7 @@ const AddFood = () => {
         theme: "dark"
       });
       // Posting New Food Item to the Database
-      await axios.post(`http://localhost:${port}/api/Items`, newItem);
+      await axios.post(`/api/Items`, newItem);
       Router.reload();
 
     } catch (err) {
